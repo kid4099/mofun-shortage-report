@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mofun 車隊調度分析報告</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      padding: 40px 20px;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    h1 { font-size: 1.8rem; margin-bottom: 6px; color: #1a1a2e; }
+    .subtitle { color: #666; font-size: 0.95rem; margin-bottom: 36px; }
+    .card-grid { display: grid; gap: 16px; }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.12); transform: translateY(-2px); }
+    .card-left { display: flex; align-items: center; gap: 16px; }
+    .badge {
+      background: #e8f4fd;
+      color: #1a73e8;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+    .card-title { font-size: 1.05rem; font-weight: 600; }
+    .card-desc { font-size: 0.85rem; color: #888; margin-top: 3px; }
+    .arrow { color: #ccc; font-size: 1.2rem; }
+    footer { text-align: center; margin-top: 48px; font-size: 0.8rem; color: #aaa; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚗 Mofun 車隊調度分析報告</h1>
+    <p class="subtitle">每月缺車需求 × 營運效率分析，點選下方報告閱覽</p>
+
+    <div class="card-grid">
+      <a class="card" href="mofun_202604_車隊調度分析報告.html">
+        <div class="card-left">
+          <span class="badge">2026 / 04</span>
+          <div>
+            <div class="card-title">4月份缺車分析報告</div>
+            <div class="card-desc">04/01 – 04/12 自動取消訂單資料</div>
+          </div>
+        </div>
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="card" href="mofun_202604W1_車隊調度分析報告.html">
+        <div class="card-left">
+          <span class="badge">2026 / 04 W1</span>
+          <div>
+            <div class="card-title">4月份第一週缺車分析報告</div>
+            <div class="card-desc">04/01 – 04/06 自動取消訂單資料</div>
+          </div>
+        </div>
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="card" href="mofun_202603_車隊調度分析報告.html">
+        <div class="card-left">
+          <span class="badge">2026 / 03</span>
+          <div>
+            <div class="card-title">3月份缺車分析報告</div>
+            <div class="card-desc">3月份每日缺車明細_全部站點</div>
+          </div>
+        </div>
+        <span class="arrow">›</span>
+      </a>
+    </div>
+
+    <footer>Mofun Operations · 自動生成報告系統</footer>
+  </div>
+</body>
+</html>
